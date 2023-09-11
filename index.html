@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starter Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+    <header class="bytbix-header">
+        <div class="menu-nest">
+            <div class="logo-section">
+                <img src="img/bytflex.png" alt="Bytbix Logo">
+            </div>
+            
+            <!-- Desktop menu -->
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="#">Početna</a></li>
+                    <li class="dropdown has_child">
+                        <a href="#">Usluge</a>
+                        <ul>
+                            <li><a href="#">Usluga 1</a></li>
+                            <li><a href="#">Usluga 2</a></li>
+                            <li><a href="#">Usluga 3</a></li>
+                            <li><a href="#">Usluga 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">O nama</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="social-icons">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <!-- Dodajte još ikona po želji -->
+                </ul>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav id="bytbixNav" class="mobile-menu">
+                <img src="img/bytflex_white.png">
+                <ul>
+                    <li><a href="#">Početna</a></li>
+                    <li onclick="toggleDropdown(event)" ><a class="dropdrop" href="#">Usluge</a>
+                        <ul>
+                            <li><a href="#">Usluga 1</a></li>
+                            <li><a href="#">Usluga 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">O nama</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <section>
+        <div class="nest">
+            <div class="frame nop">
+               
+                <div class="seg-6 ">
+                    <p>
+                        <h2 class="mt-50">  Why it's awesome Bytflex?</h2>
+
+                      
+
+Bytflex is an exceptional choice due to its minimal setup of styles, providing a fast and clean starting point. With just 2kb gzipped, it is incredibly lightweight. Unlike other UI frameworks, Bytflex focuses on better performance and increased productivity by minimizing the number of properties to reset, resulting in cleaner code. We hope you find it enjoyable to work with!
+
+                    </p>
+
+
+                </div>
+                <div class="seg-6 ">
+                    <p>
+<h2 class="mt-50">  Mobile First</h2>
+
+Bytflex follows the Mobile First design strategy, which prioritizes development for mobile devices such as smartphones and tablets. This means that styles outside of media queries are applied to all devices, with larger screens targeted for enhancements. By adopting this approach, smaller devices are spared from parsing unused CSS, improving performance. Bytflex employs breakpoints to adapt to different screen sizes.
+
+
+
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="nest">
+        <h2 class="mt-50"> Grids</h2>
+        <p class="description">Bytflex uses a grid system based on 12 columns, which follows the CSS Flexible Box Layout Module standard. This choice distinguishes it from many other frameworks. By adopting this approach, Bytflex aims to provide simplicity, recognizing that a functional codebase is vital for maintainability and scalability. To create a row of columns, you can easily add the desired number of columns, whether it be three, five, or any other number. Bytflex will automatically distribute the columns evenly within the available space. While there are no strict restrictions on the number of columns you can use, it is recommended to adhere to the grid system's design pattern.</p>
+        
+        <div class="example">
+            <div class="nest">
+                <div class="frame">
+                    <div class=" seg-12"><span class="seg-demo"><b>seg-12</b> (100%)</span></div>
+                </div>
+                <div class="frame">
+                    <div class=" seg-11"><span class="seg-demo"><b>seg-11</b> (91.6%)</span></div>
+                    <div class=" seg-1"><span class="seg-rest">rest</span></div>
+
+                </div>
+                <div class="frame">
+                    <div class=" seg-10"><span class="seg-demo"><b></b>seg 10 (83.3%)</span></div>
+                    <div class=" seg-2"><span class="seg-rest">rest</span></div>
+
+                </div>
+                <div class="frame">
+                    <div class=" seg-9"><span class="seg-demo"><b>seg-9</b> (75%)</span></div>
+                    <div class=" seg-3"><span class="seg-rest"><b></b>rest</span></div>
+
+                </div>
+                <div class="frame">
+                    <div class=" seg-8"><span class="seg-demo"><b>seg-8</b> (66.6%)</span></div>
+                    <div class=" seg-4"><span class="seg-rest">rest</span></div>
+
+                </div>
+                <div class="frame">
+                    <div class=" seg-7"><span class="seg-demo"><b>seg-7</b> (58.33%)</span></div>
+                    <div class=" seg-5"><span class="seg-rest">rest</span></div>
+
+                </div>
+                <div class="frame">
+                    <div class=" seg-6"><span class="seg-demo"><b>seg-6</b> (50%)</span></div>
+                    <div class=" seg-6"><span class="seg-rest">rest</span></div>
+
+                </div>
+                <div class="frame">
+                    <div class=" seg-5"><span class="seg-demo"><b>seg-5</b> (41.66%)</span></div>
+                    <div class=" seg-7"><span class="seg-rest">rest</span></div>
+
+                </div>
+                <div class="frame">
+                    <div class=" seg-4"><span class="seg-demo"><b>seg-4</b> (33.33%)</span></div>
+                    <div class=" seg-8"><span class="seg-rest">rest</span></div>
+
+                </div>
+                <div class="frame">
+                    <div class=" seg-3"><span class="seg-demo"><b>seg-3</b> (25%)</span></div>
+                    <div class=" seg-9"><span class="seg-rest">rest</span></div>
+
+                </div>
+                <div class="frame">
+                    <div class=" seg-2"><span class="seg-demo"><b>seg-2</b> (16.66%)</span></div>
+                    <div class=" seg-10"><span class="seg-rest">rest</span></div>
+
+                </div>
+                <div class="frame">
+                    <div class=" seg-1"><span class="seg-demo"><b>seg-1</b> (8.33%)</span></div>
+                    <div class=" seg-11"><span class="seg-rest">rest</span></div>
+                </div>
+          
+                <!-- ... ostali segmenti ... -->
+            </div>
+        </div>
+    
+        <!-- Sve ostalo ostaje isto (button, pre, code ...) -->
+    
+    </section>
+    
+<section>
+    <div class="example">
+        <div class="nest">
+            <div class="frame">
+                <div class="seg seg-12 text-center">
+                    <h2 class="mt-50"> Forms</h2>
+                    <p class="description">
+                        Filling out the Form has never been an enjoyable task, especially when using a mobile device's on-screen keyboard. However, Bytflex aims to alleviate this issue by prioritizing user experience in its design.
+                    </p>
+                </div>
+
+
+                </p>
+                
+                    <!-- Tekstualno polje -->
+                    <div class="seg seg-12">
+                        <label for="username">Korisničko ime:</label>
+                        <input type="text" id="username" name="username" placeholder="Unesite korisničko ime">
+                    </div>
+                
+                    <!-- Lozinka -->
+                    <div class="seg seg-12">
+                        <label for="password">Lozinka:</label>
+                        <input type="password" id="password" name="password" placeholder="Unesite lozinku">
+                    </div>
+                
+               
+                
+                   
+
+
+                    <div class="seg seg-12">
+
+                        <input type="checkbox" id="test1" />
+                        <label for="test1">Red</label>
+                        <input type="checkbox" id="test2" checked="checked" />
+                        <label for="test2">Yellow</label>
+                        
+                        <input type="checkbox" id="test3" checked="checked" disabled="disabled" />
+                        <label for="test3">Green</label>
+                        
+                        <input type="checkbox" id="test4" disabled="disabled" />
+                        <label for="test4">Brown</label>
+                         
+                      </div>
+                
+                    <!-- Dropdown lista -->
+                    <div class="seg seg-12">
+                        <label for="country">Zemlja:</label>
+                        <select id="country" name="country">
+                            <option value="serbia">Srbija</option>
+                            <option value="croatia">Hrvatska</option>
+                            <!-- Dodajte još opcija po potrebi -->
+                        </select>
+                    </div>
+                
+                    <!-- Textarea -->
+                    <div class="seg seg-12">
+                        <label for="bio">Biografija:</label>
+                        <textarea id="bio" name="bio" rows="4" placeholder="Napišite nešto o sebi..."></textarea>
+                    </div>
+                
+                    <!-- Dugme za slanje -->
+                    <div class="seg seg-12 no-padding">
+                        <a class="btn" type="submit">Pošalji</a>
+                    </div>
+                    
+                
+            
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="example">
+        <div class="nest">
+            <div class="frame">
+                <div class="seg seg-12 text-center">
+                    <h2 class="mt-50"> Table</h2>
+                </div>
+                
+                
+                    <!-- Tekstualno polje -->
+                    <div class="seg seg-12">
+
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Height</th>
+                                <th>Location</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Stephen Curry</td>
+                                <td>27</td>
+                                <td>1,91</td>
+                                <td>Akron, OH</td>
+                            </tr>
+                            <tr>
+                                <td>Klay Thompson</td>
+                                <td>25</td>
+                                <td>2,01</td>
+                                <td>Los Angeles, CA</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <section>
+        <div class="example">
+            <div class="nest">
+                <div class="frame">
+                    <div class="seg seg-12">
+                        <h2 class="mt-50 text-center"> Typography</h2>
+                    </div>
+                    <div class="seg seg-12">
+        
+                        <h1>Typography</h1>
+                        <h2>Typography</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <p>This is a sample paragraph with <a href="#">a sample link</a>. The typography section showcases various textual elements.</p>
+                        <blockquote>
+                            This is a blockquote. It is used to quote a section of text from another source.
+                        </blockquote>
+                        <ul>
+                            <li>List item 1</li>
+                            <li>List item 2</li>
+                            <li>List item 3</li>
+                        </ul>
+                        <ol>
+                            <li>First ordered item</li>
+                            <li>Second ordered item</li>
+                            <li>Third ordered item</li>
+                        </ol>
+                        <pre><code>Code snippet example</code></pre>
+
+                        
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    function toggleMenu() {
+        const nav = document.getElementById('bytbixNav');
+        const hamburger = document.querySelector('.hamburger');
+
+        if (nav.style.left === '0px') {
+            nav.style.left = '-300px';
+            hamburger.classList.remove('active');
+        } else {
+            nav.style.left = '0px';
+            hamburger.classList.add('active');
+        }
+    }
+
+    function toggleDropdown(event) {
+        let clickedItem = event.currentTarget;
+        let submenu = clickedItem.querySelector('ul');
+
+        if (submenu) {
+            if (submenu.style.display === 'none' || submenu.style.display === '') {
+                submenu.style.display = 'block';
+            } else {
+                submenu.style.display = 'none';
+            }
+        }
+        event.stopPropagation(); // sprečavamo dalje propagiranje event-a
+    }
+
+
+    </script>
+    
+</body>
+
+</html>
